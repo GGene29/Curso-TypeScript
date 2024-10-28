@@ -110,4 +110,7 @@
   "exclude": [
     "node2"
   ],
+  "include":[
+    "classes/basica.ts"
+  ]
 }
