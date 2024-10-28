@@ -84,4 +84,18 @@
   mystique = apocalipsis;
   console.log(mystique);
 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 })()

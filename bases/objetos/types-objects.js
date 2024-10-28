@@ -15,6 +15,5 @@
     let resultFun = marcos.caract;
     console.log(resultFun);
     console.log(marcos);
-    // Los types se pueden asignar a otros pero ellos en si, no cuentan como valor == undefined
-    // console.log(Usuario) 
 })();
+//# sourceMappingURL=types-objects.js.map

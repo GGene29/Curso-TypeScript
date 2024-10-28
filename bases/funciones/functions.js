@@ -9,3 +9,4 @@
     };
     console.log(typeof llamado);
 })();
+//# sourceMappingURL=functions.js.map

@@ -7,3 +7,4 @@
     const a = VoidType();
     console.log(a);
 })();
+//# sourceMappingURL=void.js.map

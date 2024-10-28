@@ -1,10 +1,7 @@
 "use strict";
 (() => {
-    // Propias de ts 
-    // estas no tienen un punto final alcanzable
     const prueba = (message) => {
         console.log('Hasta aqui llegamos');
-        // Estas sirven para que el código no continue con la ejecución
         throw new Error(message);
     };
     prueba("NO HAY FIN");
@@ -16,3 +13,4 @@
     };
     error('feliz');
 })();
+//# sourceMappingURL=never.js.map

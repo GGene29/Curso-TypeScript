@@ -17,7 +17,6 @@
         }
     };
     console.log(bumblebee);
-    // Villanos debe de ser un arreglo de objetos personalizados
     const villanos = [{
             nombre: "Lex Luthor",
             edad: 54,
@@ -28,7 +27,7 @@
             mutante: true
         }, {
             nombre: "James Logan",
-            edad: 2, //undefined,
+            edad: 2,
             mutante: true
         }];
     console.log(villanos);
@@ -40,11 +39,10 @@
         lider: true,
         miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
     };
-    // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
     let mystique;
-    // console.log(mystique);
     mystique = charles;
     console.log(mystique);
     mystique = apocalipsis;
     console.log(mystique);
 })();
+//# sourceMappingURL=object-homework.js.map

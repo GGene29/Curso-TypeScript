@@ -11,3 +11,4 @@
     };
     console.log({ persona });
 })();
+//# sourceMappingURL=multi-type-objects.js.map
