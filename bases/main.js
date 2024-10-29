@@ -1,46 +1,26 @@
 "use strict";
 (() => {
-    class Person {
-        constructor(name, age) {
-            this.name = name;
-            this.age = age;
+    class Calculo {
+        constructor(base, altura, perimetro) {
+            this.pi = 3.14;
+            this.area = 0;
+            this.base = base;
+            this.altura = altura;
+            this.perimetro = perimetro;
+        }
+        calcularAreaC() {
+            console.log('Calculo metodo de clase principal Cuadradop');
+            this.area = this.perimetro * this.perimetro;
+            console.log(`El área calculada fue; en base al perimetro ${this.perimetro}`);
+            return `Área Calculada ${this.area}^2`;
+        }
+        calcuTriangle() {
+            console.log('Calculo - metodo de clase principal para triangulo');
+            this.area = this.base * this.altura / 2;
+            return `Area Calculada del Triangulo ${this.area}^2`;
         }
     }
-    const jose = new Person("JOSE PEREZ", "25");
-    console.log(jose);
-})();
-(() => {
-    class Cars {
-        constructor(model, year, id = 55) {
-            this.model = model;
-            this.year = year;
-        }
-    }
-    Cars.id = 20;
-    const auto = new Cars("JOSE PEREZ", "25", 2);
-    console.log('Nueva clase de autos - resumido');
-    console.log(auto);
-    console.log(Cars.id);
-})();
-(() => {
-    class Casa {
-        static prueba() {
-            return this.name;
-        }
-        constructor(model, year, id = 55) {
-            this.model = model;
-            this.year = year;
-        }
-        bio() {
-            return "Prueba";
-        }
-    }
-    Casa.id = 20;
-    const auto = new Casa("Residencia", "5");
-    console.log('Nueva clase de autos - resumido');
-    console.log(auto);
-    console.log(Casa.id);
-    console.log(auto.bio());
-    console.log(Casa.prueba());
+    const triangulo = new Calculo(5, 6, 0);
+    console.log(triangulo.calcuTriangle());
 })();
 //# sourceMappingURL=main.js.map
