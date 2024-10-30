@@ -111,6 +111,6 @@
     "node2"
   ],
   "include":[
-    "classes/constructor.ts"
+    "interfaces/"
   ]
 }
