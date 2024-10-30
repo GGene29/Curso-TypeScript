@@ -35,10 +35,10 @@
     }
 
     const triangulo = new Calculo(5,6,0)
-
     console.log(triangulo.calcuTriangle())
 
-
+    const cuadrado = new Calculo(3,5,9)
+    console.log(cuadrado.calcularAreaC())
 
 
 }
