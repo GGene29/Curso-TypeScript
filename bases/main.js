@@ -1,70 +1,45 @@
 "use strict";
 (() => {
-    const ventas = {
-        trabajadores: "Personas",
-        equipos: "Computadoras",
-        pagos: 200,
-        departamento: "Ventas"
+    const conducirBatimovil = (auto) => {
+        auto.encender = true;
+        auto.velocidadMaxima = 100;
+        auto.acelerar();
     };
-    let inventario = {
-        trabajadores: "Cargueros",
-        equipos: "Productos",
-        pagos: 250,
-        departamento: "Inventario y Mercader"
+    const batimovil = {
+        encender: false,
+        velocidadMaxima: 0,
+        acelerar() {
+            console.log("...... gogogo!!!");
+        }
     };
-})();
-(() => {
-    class Casa {
+    const guason = {
+        reir: true,
+        comer: true,
+        llorar: false
+    };
+    const reir = (guason) => {
+        if (guason.reir) {
+            console.log("JAJAJAJA");
+        }
+    };
+    const ciudadGotica = (ciudadanos) => {
+        return ciudadanos.length;
+    };
+    class Persona {
         constructor() {
-            this.name = "JJ";
-            this.numberEdificios = 5;
-            this.age = 4;
+            this.nombre = "Pedro";
+            this.edad = 20;
+            this.sexo = true;
+            this.estadoCivil = "Soltero";
+        }
+        imprimirBio(descripcion) {
+            return descripcion;
+        }
+        usosArg() {
+            console.log("Aqui estas");
         }
     }
-})();
-(() => {
-    const client = {
-        name: "Fernando",
-        age: 25,
-        address: {
-            id: 12,
-            number: 43,
-            calle: "Principal"
-        },
-        getFull(name) {
-            console.log('Ahora soy ' + name);
-        },
-    };
-    const clientDos = {
-        name: "María",
-        age: 5,
-        getFull(name) {
-            console.log('Ahora soy ' + name);
-        },
-    };
-    const casa = {
-        name: "Casa",
-        age: 6,
-        address: {
-            id: 5,
-            number: 10,
-            calle: "Buena vaina"
-        }
-    };
-    console.log(clientDos, casa, client);
-    if (typeof clientDos.getFull === 'function') {
-        clientDos.getFull('Petra');
-    }
-    else {
-        console.log('El método getFull no está definido para clientDos');
-    }
-})();
-(() => {
-    let addNumber;
-    addNumber = (a, b) => {
-        let c = a * b;
-        return c;
-    };
-    console.log(addNumber(7, 6));
+    const miebro = new Persona;
+    console.log(miebro);
 })();
 //# sourceMappingURL=main.js.map
