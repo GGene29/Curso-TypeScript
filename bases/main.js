@@ -59,4 +59,12 @@
         console.log('El método getFull no está definido para clientDos');
     }
 })();
+(() => {
+    let addNumber;
+    addNumber = (a, b) => {
+        let c = a * b;
+        return c;
+    };
+    console.log(addNumber(7, 6));
+})();
 //# sourceMappingURL=main.js.map
