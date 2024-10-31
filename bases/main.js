@@ -30,11 +30,17 @@
             id: 12,
             number: 43,
             calle: "Principal"
-        }
+        },
+        getFull(name) {
+            console.log('Ahora soy ' + name);
+        },
     };
     const clientDos = {
         name: "María",
-        age: 5
+        age: 5,
+        getFull(name) {
+            console.log('Ahora soy ' + name);
+        },
     };
     const casa = {
         name: "Casa",
@@ -46,5 +52,11 @@
         }
     };
     console.log(clientDos, casa, client);
+    if (typeof clientDos.getFull === 'function') {
+        clientDos.getFull('Petra');
+    }
+    else {
+        console.log('El método getFull no está definido para clientDos');
+    }
 })();
 //# sourceMappingURL=main.js.map
