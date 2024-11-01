@@ -1,45 +1,15 @@
 "use strict";
-(() => {
-    const conducirBatimovil = (auto) => {
-        auto.encender = true;
-        auto.velocidadMaxima = 100;
-        auto.acelerar();
+(() => { })();
+var Validations;
+(function (Validations) {
+    Validations.validateText = (text) => {
+        return (text.length > 3) ? true : false;
     };
-    const batimovil = {
-        encender: false,
-        velocidadMaxima: 0,
-        acelerar() {
-            console.log("...... gogogo!!!");
-        }
+    const validateDate = (myDate) => {
+        return (isNaN(myDate.valueOf()))
+            ? false
+            : true;
     };
-    const guason = {
-        reir: true,
-        comer: true,
-        llorar: false
-    };
-    const reir = (guason) => {
-        if (guason.reir) {
-            console.log("JAJAJAJA");
-        }
-    };
-    const ciudadGotica = (ciudadanos) => {
-        return ciudadanos.length;
-    };
-    class Persona {
-        constructor() {
-            this.nombre = "Pedro";
-            this.edad = 20;
-            this.sexo = true;
-            this.estadoCivil = "Soltero";
-        }
-        imprimirBio(descripcion) {
-            return descripcion;
-        }
-        usosArg() {
-            console.log("Aqui estas");
-        }
-    }
-    const miebro = new Persona;
-    console.log(miebro);
-})();
+})(Validations || (Validations = {}));
+console.log(Validations.validateText('aqui'));
 //# sourceMappingURL=main.js.map
